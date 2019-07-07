@@ -26,4 +26,10 @@ public class Task2 {
                 s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
                         + s);
     }
+
+    public static void printName() {
+        for (int i = 0; i < 10; i++) System.out.print("Nataly ");
+        System.out.println("");
+
+    }
 }

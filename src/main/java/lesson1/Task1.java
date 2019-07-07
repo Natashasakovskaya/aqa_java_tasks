@@ -5,6 +5,13 @@ public class Task1 {
     Написать функцию, которая вычисляет минимум из трёх чисел.
     */
     public static void main(String[] args) {
+
+        int ee =1;
+        int yy =2;
+        int zz =3;
+
+
+
         System.out.println(
                 min(5,2,3)
         );
