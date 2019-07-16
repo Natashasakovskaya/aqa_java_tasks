@@ -6,30 +6,30 @@ System.out.println, System.out.print можно использовать тол�
 для этого нужно воспользоваться циклом for
 */
 
+
 public class Task2 {
 
     public static void main(String[] args) {
-        String s = "Vladimir";
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
+
+        int a = 5;
+        for (int i = 0; i < 11; i++) {
+            myLovelyName(a, "Nataly ");
+            System.out.println("Nataly");
+
+        }
     }
 
-    public static void printName() {
-        for (int i = 0; i < 10; i++) System.out.print("Nataly ");
-        System.out.println("");
+    public static void myLovelyName(int ii, String myLovelyName) {
+        for (int i = 0; i < ii; i++) System.out.print( myLovelyName + "");
+    }
 
+    public static void printMyName(String myLovelyName) {
+        System.out.println("My name is "+ myLovelyName);
+        System.out.println("My name is " + getYourName(myLovelyName));
+
+    }
+
+    public static String getYourName(String myLovelyName) {
+        return "Your name is " + myLovelyName;
     }
 }
