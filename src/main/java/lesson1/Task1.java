@@ -55,6 +55,7 @@ public class Task1 {
             min = a;
         }
 
+
         return min;
     }
 
