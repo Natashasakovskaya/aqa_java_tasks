@@ -9,14 +9,25 @@ System.out.println, System.out.print можно использовать тол�
 public class Task3 {
 
     public static void main(String[] args) {
-        int i = 1;
-        while(i < 11){
-            System.out.print("Nataly ");
-            i++;
-            System.out.println("Nataly ");
+
+        int i = 0;
+        while (i < 5) {
+            myLovelyName("Nataly ");
+            System.out.println("Nataly");
             i++;
 
         }
     }
+
+    public static void myLovelyName(String myLovelyName) {
+
+        int ii = 0;
+
+        while (ii < 9) {
+            System.out.print(myLovelyName + "");
+            ii++;
+        }
+    }
+
 
 }

@@ -9,38 +9,26 @@ System.out.println, System.out.print можно использовать тол�
 public class Task4 {
 
     public static void main(String[] args) {
-        String s = "Vladimir";
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
-        System.out.println(
-                s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " " + s + " "
-                        + s);
+
+        int i = 0;
+        do{
+            myLovelyName("Nataly ");
+            System.out.println("Nataly");
+            i++;
+
+        } while (i < 5);
     }
 
-    public static void printMyName(int ii, String name) {
-        for (int i = 0; i < ii; i++) {
-            System.out.print(name + " ");
-        }
+    public static void myLovelyName(String myLovelyName) {
+
+        int ii = 0;
+
+        do {
+            System.out.print(myLovelyName + "");
+            ii++;
+        } while (ii < 9);
     }
 
 
 
-    public static void printName(String name) {
-        System.out.println("My name is " + name);
-//        System.out.println("My name is " + getYourName(name));
-    }
-
-    public static String getYourName(String name) {
-        return "Your name is " + name;
-    }
 }
