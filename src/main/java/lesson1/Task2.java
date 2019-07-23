@@ -23,4 +23,9 @@ public class Task2 {
         for (int i = 0; i < ii; i++) System.out.print( myLovelyName + "");
     }
 
+    public static String myName(String name) {
+        return "My name is: " + name + "\n new line";
+    }
+
+
 }
