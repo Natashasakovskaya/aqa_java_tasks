@@ -6,27 +6,39 @@ System.out.println, System.out.print можно использовать тол�
 для этого нужно воспользоваться циклом while
 */
 
+import java.lang.String;
+
 public class Task3 {
 
     public static void main(String[] args) {
+        String calMethodResult = homeWorkTask(5, "Nataly");
+        System.out.print(calMethodResult);
 
-        int i = 0;
-        while (i < 5) {
-            myLovelyName("Nataly ");
-            System.out.println("Nataly");
-            i++;
-
-        }
     }
 
-    public static void myLovelyName(String myLovelyName) {
+    public static String homeWorkTask(int rowCount, String name) {
+        int i = 0;
+        String result = "";
+        while (i < rowCount -1) {
+            String calMethodResult = buidRow(name);
+            result = result + calMethodResult + "\n";
+            i++;
+        }
+
+        return result + buidRow(name);
+    }
+
+    public static String buidRow(String name) {
 
         int ii = 0;
+        String result = "";
 
         while (ii < 9) {
-            System.out.print(myLovelyName + "");
+            result = result + name + " ";
             ii++;
         }
+
+        return result + name ;
     }
 
 

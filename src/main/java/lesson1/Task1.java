@@ -6,9 +6,6 @@ public class Task1 {
     */
     public static void main(String[] args) {
 
-        int ee =1;
-        int yy =2;
-        int zz =3;
 
 
 
